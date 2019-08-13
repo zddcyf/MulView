@@ -27,4 +27,15 @@
         <attr name="isLine" format="boolean" />
     </declare-styleable>
 
+    <!-- 自定义开关的属性 -->
+    <declare-styleable name="MulSwitchView">
+        <attr name="switchLeftBg" format="reference" />
+        <attr name="switchRightBg" format="reference" />
+        <attr name="switchBtnLeftBg" format="reference" />
+        <attr name="switchBtnRightBg" format="reference" />
+        <attr name="switchBtnWH" format="dimension" />
+        <attr name="switchBtnPadd" format="dimension" />
+        <attr name="switchOpenOrClose" format="boolean" />
+        <attr name="switchAniTime" format="integer" />
+    </declare-styleable>
 </resources>

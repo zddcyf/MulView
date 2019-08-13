@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <com.mul.view.view.MulTextView
+    <com.mul.view.view.textview.MulTextView
         android:id="@+id/set"
         android:layout_width="match_parent"
         android:layout_height="40dp"
@@ -25,5 +25,20 @@
         app:rightDrawable="@mipmap/ic_launcher"
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="0dp" />
+
+    <com.mul.view.view.switch_view.MulSwitchView
+        android:id="@+id/switchView"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/set"
+        app:switchBtnLeftBg="@drawable/mul_switch_btn_left"
+        app:switchBtnPadd="2dp"
+        app:switchBtnRightBg="@drawable/mul_switch_btn_right"
+        app:switchBtnWH="30dp"
+        app:switchLeftBg="@drawable/mul_switch_left_bg"
+        app:switchOpenOrClose="true"
+        app:switchRightBg="@drawable/mul_switch_right_bg" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
