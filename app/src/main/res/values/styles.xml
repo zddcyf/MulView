@@ -8,4 +8,23 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!--自定义textview的属性-->
+    <declare-styleable name="MulTextView">
+        <attr name="leftText" format="string" />
+        <attr name="leftTextColor" format="color" />
+        <attr name="leftTextSize" format="integer" />
+        <attr name="leftMargin" format="dimension" />
+        <attr name="isLeftDrawable" format="boolean" />
+        <attr name="leftDrawable" format="reference" />
+        <attr name="leftDrawablePadd" format="dimension" />
+        <attr name="rightText" format="string" />
+        <attr name="rightTextColor" format="color" />
+        <attr name="rightTextSize" format="integer" />
+        <attr name="rightMargin" format="dimension" />
+        <attr name="isRightDrawable" format="boolean" />
+        <attr name="rightDrawable" format="reference" />
+        <attr name="rightDrawablePadd" format="dimension" />
+        <attr name="isLine" format="boolean" />
+    </declare-styleable>
+
 </resources>
