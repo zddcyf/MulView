@@ -1,44 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
-    <com.mul.view.view.textview.MulTextView
-        android:id="@+id/set"
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:background="#ffffff"
-        android:paddingLeft="20dp"
-        android:paddingRight="10dp"
-        app:isLeftDrawable="true"
-        app:isRightDrawable="true"
-        app:leftDrawable="@mipmap/ic_launcher"
-        app:leftDrawablePadd="14dp"
-        app:leftText="设置"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:leftTextSize="14"
-        app:rightDrawable="@mipmap/ic_launcher"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="0dp" />
+        android:layout_height="match_parent"
+        tools:context="com.mul.MainActivity">
 
-    <com.mul.view.view.switch_view.MulSwitchView
-        android:id="@+id/switchView"
-        android:layout_width="60dp"
-        android:layout_height="30dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/set"
-        app:switchBtnLeftBg="@drawable/mul_switch_btn_left"
-        app:switchBtnPadd="2dp"
-        app:switchBtnRightBg="@drawable/mul_switch_btn_right"
-        app:switchBtnWH="30dp"
-        app:switchLeftBg="@drawable/mul_switch_left_bg"
-        app:switchOpenOrClose="true"
-        app:switchRightBg="@drawable/mul_switch_right_bg" />
+        <com.mul.view.textview.MulTextView
+            android:id="@+id/set"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#ffffff"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            app:isLeftDrawable="true"
+            app:isRightDrawable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:leftDrawable="@mipmap/ic_launcher"
+            app:leftDrawablePadd="14dp"
+            app:leftText="设置"
+            app:leftTextSize="14"
+            app:rightDrawable="@mipmap/ic_launcher"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="0dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <com.mul.view.switch_view.MulSwitchView
+            android:id="@+id/switchView"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/set"
+            app:switchBtnLeftBg="@drawable/mul_switch_btn_left"
+            app:switchBtnPadd="2dp"
+            app:switchBtnRightBg="@drawable/mul_switch_btn_right"
+            app:switchBtnWH="30dp"
+            app:switchLeftBg="@drawable/mul_switch_left_bg"
+            app:switchOpenOrClose="true"
+            app:switchRightBg="@drawable/mul_switch_right_bg" />
+
+        <com.mul.view.label.MulLabelView
+            android:id="@+id/tagView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/switchView" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

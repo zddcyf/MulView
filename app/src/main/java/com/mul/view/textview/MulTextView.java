@@ -1,4 +1,4 @@
-package com.mul.view.view.textview;
+package com.mul.view.textview;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -9,7 +9,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.mul.view.R;
-import com.mul.view.utils.MulTextUtils;
+import com.mul.utils.MulTextUtils;
 
 /**
  * Created by ZDD on 2016/12/13.

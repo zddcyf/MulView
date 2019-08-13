@@ -1,4 +1,4 @@
-package com.mul.view.view.switch_view;
+package com.mul.view.switch_view;
 
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
