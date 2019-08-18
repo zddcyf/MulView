@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity implements MulLabelView.ITag
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
         mulSwitchView = findViewById(R.id.switchView);
         mulSwitchView.setSwitchBtnClick(new MulSwitchView.ISwitchBtnListener() {
